@@ -51,7 +51,7 @@ def refine_modlist(history, raw):
             mod_list.append(mod(part[0],part[1],part[2]))
         try:
             for h_mod in history:
-                if h_mod["namespace"] == mod_list[i].namespace and h_mod["name"] == mod_list[i].name and h_mod["version"] == mod_list[i].version:
+                if h_mod["namespace"] == mod_list[i].namespace and h_mod["name"] == mod_list[i].name:
                     mod_list[i].nochange = 1
         except:
             pass
